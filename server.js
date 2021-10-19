@@ -7,8 +7,8 @@ const app = express()
 
 app.use(express.json())
 
-// require("dotenv").config({ path: "./config/.env" })
-require('dotenv').config()
+require("dotenv").config({ path: "./config/.env" })
+// require('dotenv').config()
 
 
 
