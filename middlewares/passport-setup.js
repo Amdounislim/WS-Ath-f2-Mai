@@ -4,12 +4,12 @@ const passport = require("passport")
 const User = require("../models/user")
 
 
-// let secretOrKey = process.env.JWT_SECRET
+let secretOrKey = process.env.secretOrKey
 // console.log(secretOrKey)
 
 let opts = {
     jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
-    secretOrKey:"secretOrKey"
+    secretOrKey
 }
 
 passport.use(

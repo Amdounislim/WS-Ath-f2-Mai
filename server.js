@@ -1,14 +1,18 @@
+require('dotenv').config()
+// require("dotenv").config({ path:"./config/.env" })
 const express = require('express')
 const connectDB = require('./config/connectDB')
 const user = require('./routes/user')
+const cors = require('cors')
 
 
 const app = express()
 
+app.use(cors());
+
 app.use(express.json())
 
-require("dotenv").config({ path: "./config/.env" })
-// require('dotenv').config()
+
 
 
 
